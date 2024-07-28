@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html{
+    height: auto;
+    background-color: #3b2624;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 35px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 100;
+}
+
+header.rolagem{
+    background-color: #785d5b;
+    padding: 20px 4px;
+}
+
+header.rolagem a{
+    color: black;
+}
+
+header i{
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+img[src= "img/imagem1.jpg"]{
+    width: 100%;
+    height: 99.8%;
+}
+
+img[src= "img/imgfundo.jpg"]{
+    width: 100%;
+    height: 99.8%;
+    filter: brightness(35%);
+}
+
+img[src= "imagensprodutos/IMG-20240724-WA0060.jpg"]{
+    height: 67%;
+}
+
+img[src= "img/imgfundo.jpg"]{
+    width: 100%;
+    height: 99.8%;
+    filter: brightness(35%);
+}
+
+img[src= "img/imgfundo2.webp"]{
+    width: 100%;
+    height: 99.8%;
+    filter: brightness(35%);
+}
+
+img[src= "img/imgfundo5.jpg"]{
+    width: 100%;
+    height: 99.8%;
+    filter: brightness(35%);
+}
+
+img[src="img/imgfundo6.jpg"]{ 
+    width: 100%;
+    height: 99.8%;
+    filter: brightness(35%);
+}
+
+img[src="img/IMG-20240718-WA0009-removebg-preview.png"]{
+    width: 120px;
+    height: 120px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+
+img[src= "imagensprodutos/IMG-20240724-WA0065.jpg"]{
+    width: 100%;
+    height: 67%;
+}
+
+.btn-contato button{
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(252, 165, 24);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*Carrossel de imagens */
+.carrossel{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carrossel .lista .item{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.carrossel .lista .item .img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: center;
+        overflow: hidden;
+}
+
+.carrossel .lista .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-weight: bolder;
+    text-shadow: 0 5px 10px #0004;
+    
+}
+
+.carrossel .lista .item .content .autor{
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.carrossel .lista .item .content .titulo
+.carrossel .lista .item .content .topico{
+    font-weight: bold;
+    font-size: 10em;
+    list-style: 1.3em;
+}
+
+.carrossel .lista .item .content .titulo{
+    color: #fdfdfd;
+    font-size: 3em;
+    list-style: 1.3em;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.carrossel .lista .item .content .des{
+    margin-top: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.carrossel .lista .item .content .topico{
+    color: #f1683a;
+    font-size: 3em;
+    list-style: 1.3em;
+    text-align: center;
+}
+
+.carrossel .lista .item .content .buttons{
+    display: grid;
+    grid-template-columns: repeat(2,130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 205px;
+}
+
+.carrossel .lista .item .content button{
+    border: none;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carrossel .lista .item .content a{
+    border: none;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 1500;
+    cursor: pointer;
+    z-index: 100;
+    text-align: center;
+    font-size: 22.5px;
+}
+
+.carrossel .lista .item .content button:nth-child(2){
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #eee;
+}
+
+.tumbnail{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: max-content;
+    z-index: 99;
+    display: flex;
+    gap: 20px;
+}
+
+.tumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+   
+}
+
+.tumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tumbnail .item .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.tumbnail .item .content .title{
+    font-weight: bold;
+    color: white;
+    width: 1000px;
+}
+
+.arrows{
+    position: absolute;
+    top: 10%;
+    right: 112.1%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: monospace;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrows button:hover{
+    background-color: #838181;
+    color:#555;
+}
+
+.carrossel .lista .item:nth-child(1){
+    z-index: 1;   
+}
+
+.carrossel .lista .item:nth-child(1) .autor,
+.carrossel .lista .item:nth-child(1) .titulo,
+.carrossel .lista .item:nth-child(1) .topico,
+.carrossel .lista .item:nth-child(1) .des,
+.carrossel .lista .item:nth-child(1) .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: ShowContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes ShowContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.carrossel .lista .item:nth-child(1) .autor{
+    animation-delay: 0.5s;
+}
+
+.carrossel .lista .item:nth-child(1) .titulo{
+    animation-delay: 0.7s;
+}
+
+.carrossel .lista .item:nth-child(1) .topico{
+    animation-delay: 0.8s;
+}
+
+.carrossel .lista .item:nth-child(1) .des{
+    animation-delay: 1.0s;
+}
+
+.s{
+    display: none;
+}
+
+/*Efeito do "NEXT" (botão de próximo)*/
+
+.carrossel.next .lista .item:nth-child(1) img{
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: showImage 0.4s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+.carrossel.next .tumbnail .item:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes showThumbnail{
+    to{
+        width: 150px;
+    }
+}
+
+.carrossel.next .tumbnail{
+    transform: translateX(150px);
+    animation: transformThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+
+/*Efeito do botão para voltar*/
+
+.carrossel.prev .lista .item:nth-child(2){
+    z-index: 2;
+}
+
+.carrossel.prev .lista .item:nth-child(1) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 20px;
+    }
+}
+
+.carrossel.prev .tumbnail .item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.carrossel .lista .item:nth-child(2) .autor,
+.carrossel .lista .item:nth-child(2) .titulo,
+.carrossel .lista .item:nth-child(2) .topico,
+.carrossel .lista .item:nth-child(2) .des,
+.carrossel .lista .item:nth-child(2) .buttons{
+    animation: contentOut 0.5s linear 1 forwards;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateX(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.carrossel.next .arrows button,
+.carrossel.prev .arrows button{
+    pointer-events: pointer;
+}
+
+@keyframes timeRunning{
+    to{
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #body{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }   
+}
+
+@media screen and (max-width: 768px){
+    #body{
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+.produtotitulo{
+    color: #b9847d;
+    text-align: center;
+    margin-top: 750px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 30px;
+  }
+    
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+  }
+  
+  .card {
+    width: 245px;
+    margin: 5px;
+    padding: 10px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px rgba(2, 4, 8, 0.2);
+    transition: box-shadow 0.5s all;
+    text-align: center;
+  }
+
+  .card:hover {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card img {
+    width: 90%;
+    border-radius: 10px;
+    line-height: 10px;
+  }
+  
+  .card h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #333;
+  }
+  
+  .p {
+    color: #666;
+    text-align: start;
+  }
+  
+  .escrito_promocional{
+    color: green;
+    text-align: end;
+    }
+
+    .escritonome h2{
+        width: 300px;
+        margin-left: -37px;
+    }
+
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #b9847d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.col ul li a{ 
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

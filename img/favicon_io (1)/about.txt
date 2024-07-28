@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Princess Sofia
+- Font Author: Copyright (c) 2012 by Font Diner, Inc DBA Tart Workshop (diner@fontdiner.com) with Reseved Font Name "Princess Sofia"
+- Font Source: https://fonts.gstatic.com/s/princesssofia/v25/qWczB6yguIb8DZ_GXZst16n7GRz7mDUoupoI.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
